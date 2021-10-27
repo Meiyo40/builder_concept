@@ -1,9 +1,10 @@
 <?php
 
 require_once ("House.php");
+require_once ("iBuildingBuilder.php");
 
 
-class HouseBuilder
+class HouseBuilder implements iBuildingBuilder
 {
     private House $house;
 
@@ -67,7 +68,7 @@ class HouseBuilder
         return $this;
     }
 
-    public function setSurface(int $newDoors) : HouseBuilder
+    public function buildSurface(int $newDoors) : HouseBuilder
     {
         $nbItems = $this->house->getSurface();
         $this->house->setSurface($nbItems + $newDoors);
