@@ -10,4 +10,5 @@ interface iBuildingBuilder
     public function buildWC(int $nbWC) : iBuildingBuilder;
     public function buildBathrooms(int $nbBathrooms) : iBuildingBuilder;
     public function buildSurface(int $surface) : iBuildingBuilder;
+    public function get();
 }

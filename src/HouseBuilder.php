@@ -1,7 +1,7 @@
 <?php
 
-require_once ("House.php");
-require_once ("iBuildingBuilder.php");
+require_once("House.php");
+require_once("iBuildingBuilder.php");
 
 
 class HouseBuilder implements iBuildingBuilder

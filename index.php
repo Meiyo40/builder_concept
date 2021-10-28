@@ -1,7 +1,7 @@
 <?php
 
-require_once ("House.php");
-require_once ("HouseBuilder.php");
+require_once("src/House.php");
+require_once("src/HouseBuilder.php");
 
 $houseBuilder = new HouseBuilder();
 $myHome = $houseBuilder->create()
